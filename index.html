@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aguiar Studio | Portfólio</title>
 
 <!-- Google Fonts -->
@@ -19,6 +20,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+ .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    @media (max-width: 768px) {
+    .container {
+          padding: 8px;
+      }
+    }
 
 /* TIPOGRAFIA */
 body {
@@ -311,6 +324,8 @@ header p {
   </div>
   <div class="hamburger" onclick="toggleMenu()">☰</div>
 </nav>
+
+<div class="container"></div>
 
 <!-- HEADER -->
 <header id="portfolio" data-aos="fade-down">
